@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+body{
+	background-color: cyan;
+	color : red;
+	
+}
+
+a {
+	color : orange;
+}
+
+.fonddujeux{
+	background-color: lime;
+	color : red;
+}
+
+.bannierrejeux {
+	background-color: orange;
+	color : black;
+	font-weight: bold;
+}

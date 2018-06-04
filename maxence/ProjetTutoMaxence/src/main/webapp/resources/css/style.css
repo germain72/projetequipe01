@@ -1,14 +1,18 @@
 @charset "ISO-8859-1";
 
 body {
-	margin: 35px;
 	background-color: AntiqueWhite;
 }
+
+*{
+    font-family: 'Kreon', serif;
+}
+
 
 															/* Header / Nav */
 header{
     width: 100%;
-    height: 30px;
+    height: 50px;
     opacity: 80%;
     color: white;
     padding-bottom: 70.5px;
@@ -20,12 +24,9 @@ header h1{
 
 header nav {
     float: right;
-    background-color:dimgrey;
+    background-color: #212d39;
     color: white;
-}
-
-*{
-    font-family: 'Kreon', serif;
+    padding: 20px;
 }
 
 .navbar-inverse {
@@ -41,8 +42,10 @@ header nav {
 }
 
 .logo {
-    width: 150px;
+    width: 65px;
     background-color: dimgrey;
+    position: absolute;
+    left: 5px;
 }
 
 
@@ -54,19 +57,25 @@ header nav {
 
 										    /* Images de fond du site  */
 .commentaires {
-	margin-top: 200px;
+	margin-top: 20px;
 	width: 150px;
 	font-style: italic;
 	background-color: LightSkyBlue;
 	text-align: center;
 	padding: 20px;
+	position: absolute;
+	left: 15px;
+	border-radius: 300px;
+	margin: 15px;
 }
 
 .img-fond {
 	width: 100%;
 	height: 400px; ;
 	background-color: red;
+	/*background-image: url ()/resources/images/images_fond/image_fond.png"> ;*/             /* A REVOIR  */ 
 	padding: 20px;
+	margin-top: 200px;
 }
 
 
@@ -124,4 +133,55 @@ header nav {
 .promo h3 {
 	font-style: italic;
 	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+											/* Mise ç jour de l'application  */
+.mise_a_jour {
+	margin-top: 100px;
+	background-color: DarkBlue;
+	color: white;
+	padding: 20px;
+}
+
+.mise_a_jour button{
+	background-color: red;
+	border-radius: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+
+
+
+
+
+										/* Article de journal */
+										
+.journal {
+	background-color: DarkOrange;
+	margin-top: 100px;
+	padding: 20px;  
+}
+
+
+
+
+
+
+
+
+										/* Gestion des Ressources */
+.produits {
+	background-color: Gold;
+	margin-top: 100px;
+	padding: 20px;  
 }

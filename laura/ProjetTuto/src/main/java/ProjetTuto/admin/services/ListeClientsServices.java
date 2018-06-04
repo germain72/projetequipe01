@@ -21,16 +21,9 @@ public class ListeClientsServices implements IListeClientsServices{
 	}
 	
 	@Transactional
-	public void creerClient(final String nom, final String prenom, final Date naissance, final String pseudo, final String mdp, 
-			final boolean admin) {
-		final Client client = new Client();
-		client.setNomclient(nom);
-		client.setPrenomclient(prenom);
-		client.setNaissanceclient(naissance);
-		client.setPseudoclient(pseudo);
-		client.setMdpclient(mdp);
-		client.isAdmin();
-		dao.creerClient(client);
+	public void creerClient(final Client cl) {
+
+		dao.creerClient(cl);
 	}
 	
 	@Transactional

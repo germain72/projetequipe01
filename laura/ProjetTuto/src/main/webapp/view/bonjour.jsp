@@ -6,9 +6,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <head>
-    <title><spring:message code="titre.bonjour"/></title>
+    <title><spring:message code="titre.bonjour"/> : ${personne}</title>
 </head>
 <body>
-    <spring:message code="libelle.bonjour.lemonde"/>
+    <spring:message code="libelle.bonjour.lemonde" arguments="${personne}"/>
+    <h1>Etat login: ${login}</h1>
 </body>
 </html>

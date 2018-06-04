@@ -156,7 +156,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="panel-body">
+	<div id="fond2">
+		<div class="panel-body">
 		<div class="row">
 			<div class="col-md-1">
 				<div class="container-fluid">
@@ -168,17 +169,17 @@
 										<tbody>
 											<tr class="bg-warning">
 												<td>
-													<a href="#">Panier </a></td>
+													<a href="listeCourses.jsp">Panier </a></td>
 											</tr>
 											<tr class="bg-warning">
-												<td> <a href="#">Ajouter au panier </a></td>
+												<td> <a href="creation.jsp">Ajouter au panier </a></td>
 											</tr>
 											<tr class="bg-warning">
-												<td> <a href="#">Suppression d'élément
+												<td> <a href="suppression.jsp">Suppression d'élément
 														du panier </a></td>
 											</tr>
 											<tr class="bg-warning">
-												<td> <a href="#">Modification d'élément
+												<td> <a href="modification.jsp">Modification d'élément
 														du panier </a></td>
 											</tr>
 										</tbody>
@@ -188,6 +189,9 @@
 						</tbody>
 					</table>
 				</div>
+			</div>
+			<div class="col-md-1 col-md-offset-md-1">
+			<video autoplay="autoplay" loop="loop" preload="auto" controls="controls" src="<c:url value="/resources/video/gui.mp4"/> " ></video>
 			</div>
 		</div>
 		<div class="panel-footer">
@@ -204,6 +208,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </div>
 	

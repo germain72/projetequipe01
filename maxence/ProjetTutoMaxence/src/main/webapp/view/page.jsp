@@ -77,9 +77,9 @@
 	    			</ol>
 	    
 	    		<div class="carousel-inner">
-	        		<div class="item active"> <img class="logo" src="<c:url value="/resources/images/Hay day/hay_day.jpeg" />    "> </div>
-	        		<div class="item"> </div>
-	        		<div class="item"> <img src=""></div>
+	        		<div class="item active"> <img src="<c:url value="/resources/images/Blé/ble.jpg" />    "> </div>
+	        		<div class="item"> <img class="logo" src="<c:url value="/resources/images/Animaux/chevre.png" />    ">  </div>
+	        		<div class="item active">  <img src="<c:url value="/resources/images/images_fond/images_fond.jpg" />    "> </div>
 	    		</div>
 	                                                                   <!-- Fléches de navigation --> 
 		 	<a class="left carousel-control" href="#monPremierCarrousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -195,19 +195,19 @@
 	    <div class="row">
 	    	<div class="col-sm-6 col-md-6 ">
 	    		<div class="media-left">
-	    			<!-- Insérer une image d'animeaux -->
+	    			<img class="img_produits" src="<c:url value="/resources/images/Animaux/chevre.jpg" />    ">
 	    		</div>
 	    		<div class="media-body">
 	    			 <h3 class="majuscule"> Gestion de Animeaux</h3>
 	    			 <p> 
-	    			 	Dans ce jeu, vous aurez la possiblité de gérer des animeaux comme des chêvres, des poules ou des vâches par exemple  
+	    			 	Dans ce jeu, vous aurez la possiblité de gérer des animeaux comme du chêvres, des poules ou des vâches par exemple  
 	    			 </p>
 	    		</div>
 	    	</div>
 	    	
 	    	<div class="col-sm-6 col-md-6 ">
 	    		<div class="media-left">
-	    			<!-- Insérer une image de récolte -->
+	    			<img class="img_produits" src="<c:url value="/resources/images/Carottes/carootes.jpg" />    ">
 	    		</div>
 	    		<div class="media-body">
 	    			 <h3 class="majuscule"> Gestion des récoltes</h3>
@@ -219,7 +219,7 @@
 	    	
 	    	<div class="col-sm-6 col-md-6 ">
 	    		<div class="media-left">
-	    			<!-- Insérer une image de reccources -->
+	    			<img class="img_produits" src="<c:url value="/resources/images/Fromage_chêvre/leche054.jpg" />    ">
 	    		</div>
 	    		<div class="media-body">
 	    			 <h3 class="majuscule"> Gestion des ressource </h3>
@@ -231,7 +231,7 @@
 	    	
 	    	<div class="col-sm-6 col-md-6 ">
 	    		<div class="media-left">
-	    			<!-- Insérer une image de fermier -->
+	    			<img class="img_produits" src="<c:url value="/resources/images/Fermier/fermier.jpg" />    ">
 	    		</div>
 	    		<div class="media-body">
 	    			 <h3 class="majuscule"> Gestion des fermier </h3>

@@ -1,12 +1,5 @@
 @charset "ISO-8859-1";
 
-body{
-
-	}
-
-.fonddujeux{
-	}
-
 .bannierrejeux {
 	background-color: orange;
 	color : black;
@@ -19,4 +12,8 @@ body{
 
 #fond1{
 	background-color: lime;
+}
+
+#fond2{
+	background-image: url("C:\Users\Formation.M2I-JAV5-04\Documents\projet\Ferme\documents\videos\gui.mp4");
 }

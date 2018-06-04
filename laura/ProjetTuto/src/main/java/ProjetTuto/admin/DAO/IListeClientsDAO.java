@@ -6,7 +6,7 @@ import ProjetTuto.admin.bean.Client;
 
 public interface IListeClientsDAO {
 	List<Client> listeClients();
-	void creerClient(Client client);
+	void creerClient(Client cl);
 	boolean identifierClient(String pseudo, String mdp, boolean admin);
 }
 

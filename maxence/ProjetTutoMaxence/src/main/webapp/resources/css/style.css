@@ -30,11 +30,11 @@ header nav {
 }
 
 .navbar-inverse {
-    background-color: rgba(33, 45, 57, 0.8);
+    background-color: blue;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: white;
+    color: red;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
@@ -46,6 +46,15 @@ header nav {
     background-color: dimgrey;
     position: absolute;
     left: 5px;
+}
+
+.telechargement {
+	margin-right: 50px;
+}
+
+.log_in {
+	float: right;
+	width: 50px;
 }
 
 
@@ -60,12 +69,12 @@ header nav {
 	margin-top: 20px;
 	width: 150px;
 	font-style: italic;
-	background-color: LightSkyBlue;
 	text-align: center;
 	padding: 20px;
 	position: absolute;
 	left: 15px;
-	border-radius: 300px;
+	border-radius: 200px;
+	border: 5px double black;
 	margin: 15px;
 }
 
@@ -75,7 +84,7 @@ header nav {
 	background-color: red;
 	/*background-image: url ()/resources/images/images_fond/image_fond.png"> ;            /* A REVOIR  */ 
 	padding: 20px;
-	margin-top: 200px;
+	margin-top: 100px;
 }
 
 
@@ -86,13 +95,13 @@ header nav {
 
 
 											/* Video de présentation */
-.video {
-	width: 100%;
+video {
+	width: 1400px;
 	height: 400px;
-	background-color: Olive;
-	margin-top: 200px;
-	padding: 20px;
+	margin-top: 100px;
 }
+
+
 
 
 
@@ -106,6 +115,11 @@ header nav {
 	height: 400px;
 	margin-top: 100px;
 	padding: 20px;
+}
+
+.carousel img {
+	width: 660px;
+	height:388;
 }
 
 
@@ -142,7 +156,7 @@ header nav {
 
 
 
-											/* Mise ç jour de l'application  */
+												/* Mise ç jour de l'application  */
 .mise_a_jour {
 	margin-top: 100px;
 	background-color: DarkBlue;
@@ -164,12 +178,23 @@ header nav {
 
 
 
-										/* Article de journal */
+												/* Article de journal */
 										
 .journal {
-	background-color: DarkOrange;
+	background-color: black;
+	color: white;
 	margin-top: 100px;
 	padding: 20px;  
+}
+
+.journal h2{
+	padding-top: 50%;
+}
+
+.journal h3 {
+	text-decoration: underline;
+	text-transform: capitalize;
+	margin-bottom: 60px;
 }
 
 
@@ -177,9 +202,7 @@ header nav {
 
 
 
-
-
-										/* Gestion des Ressources */
+												/* Gestion des Ressources */
 .produits {
 	background-color: Gold;
 	margin-top: 100px;
@@ -189,4 +212,80 @@ header nav {
 
 .img_produits {
 	height: 100px;
+}
+
+.produits img {
+	margin-right: 50px;
+}
+
+.produits h3 {
+	text-decoration: underline;
+	text-transform: capitalize;
+	margin-bottom: 60px;
+}
+
+.partie {
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+												/* Communauté */
+.communaute {
+	background-color: SandyBrown;
+	margin-top: 100px;
+	padding: 20px;  
+	margin-bottom: 60px;
+}
+
+.communaute button{
+	background-color: red;
+	border-radius: 10px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 60px;
+}
+
+.reseaux_sociaux {
+	background-color: Fuchsia;
+}
+
+.reseaux {
+	width: 20px;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+									/* Footer */
+footer {
+	background-color: maroon;
+	color : white;
+	padding-top: 15px;
+}
+
+.footer-left h3{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.footer-left {
+    float: left;
+    margin-left: 50px;
+}
+
+.footer-right {
+    float: right;
+    right: 50px;
+    margin-right: 10px;
 }

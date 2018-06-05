@@ -10,10 +10,14 @@
 	text-align: center;
 	}
 
-#fond1{
+#fond1 {
 	background-color: lime;
 }
 
-#fond2{
+#fond2 {
 	background-image: url("C:\Users\Formation.M2I-JAV5-04\Documents\projet\Ferme\documents\videos\gui.mp4");
 }
+
+#save {
+	text-align: center;
+	}

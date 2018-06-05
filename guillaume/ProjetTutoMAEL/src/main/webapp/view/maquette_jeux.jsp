@@ -169,17 +169,17 @@
 										<tbody>
 											<tr class="bg-warning">
 												<td>
-													<a href="listeCourses.jsp">Panier </a></td>
+													<a href="listeCourses.jsp" target="_blank">Panier </a></td>
 											</tr>
 											<tr class="bg-warning">
-												<td> <a href="creation.jsp">Ajouter au panier </a></td>
+												<td> <a href="creation.jsp" target="_blank">Ajouter au panier </a></td>
 											</tr>
 											<tr class="bg-warning">
-												<td> <a href="suppression.jsp">Suppression d'élément
+												<td> <a href="suppression.jsp" target="_blank">Suppression d'élément
 														du panier </a></td>
 											</tr>
 											<tr class="bg-warning">
-												<td> <a href="modification.jsp">Modification d'élément
+												<td> <a href="modification.jsp" target="_blank">Modification d'élément
 														du panier </a></td>
 											</tr>
 										</tbody>
@@ -197,7 +197,7 @@
 		<div class="panel-footer">
 			<div class="container">
 				<div class="col-md-offset-2 col-md-4">
-					Enregistrer partie <a href="#"> <span
+					Enregistrer partie <a href="sauvegarde.jsp" target="_blank"> <span
 						class="glyphicon glyphicon-save"></span>
 					</a>
 				</div>

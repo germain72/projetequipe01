@@ -23,7 +23,7 @@
         <div class="container">
             <div class="navbar-header">
             	<img class="logo" src="<c:url value="/resources/images/Logo/logo1.png" />    ">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu"></button>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -32,17 +32,22 @@
         <div class="navbar-collapse collapse" id="menu">
             <ul class="nav navbar-nav navbar-right">
                 <li> 
-                    <a href="page.jsp" class="dropdown-toggle" data-toggle="dropdown"> Acceuil
-                         <span class="caret"> </span> <!-- la classe caret affiche un triangle pour symboliser une liste déroulante --> 
-                    </a> 
+                    <a href="page.jsp" class="dropdown-toggle" data-toggle="dropdown"> Acceuil </a> 
                 </li>
                 <li> 
                     <a href="">Présentation</a> 
                 </li>
                 <li> 
-                    <a href="#"> Téléchargement </a>  
+                    <a href="#" class="telechargement"> Téléchargement </a>  
                 </li>
-                <!-- <img src="/resources/images/log_in.png"> -->
+                
+                <li> 
+                    <img class="log_in" src="<c:url value="/resources/images/log_in.png" />    ">
+                    <ul class="dropdown-menu">
+                        <li> <a href="">Sur place</a> </li>
+                        <li> <a href="">A emporter</a> </li>
+                    </ul>
+                </li>
             </ul>
         </div>    
         </div>
@@ -59,8 +64,8 @@
     
     
     <section class="video">
-    		
-    		<h1 class="text-center"> VIDEO DE PRESENTATION </h1>
+    	<h3 class="text-center"> Bienvenue sur notre jeux </h3>
+    			<video  loop="loop" autoplay="autoplay" controls="controls" class="text-center" src="<c:url value="/resources/film/Hay_Day_360_Hug (1).mp4"/>"> </video>
     </section>
     
     
@@ -69,7 +74,6 @@
     
     <section class="carousel">
     	<div id="monPremierCarrousel" class="carousel slide" data-ride="carousel"> <!-- Bules pastille de navigation -->
-    		<h1 class="text-center"> CAROUSEL </h1>
     			<ol class="carousel-indicators">
         			<li data-slide-to="0" data-target="#monPremierCarrousel" class="active"></li>
         			<li data-slide-to="1" data-target="#monPremierCarrousel"></li>
@@ -77,14 +81,14 @@
 	    			</ol>
 	    
 	    		<div class="carousel-inner">
-	        		<div class="item active"> <img src="<c:url value="/resources/images/Blé/ble.jpg" />    "> </div>
-	        		<div class="item"> <img class="logo" src="<c:url value="/resources/images/Animaux/chevre.png" />    ">  </div>
-	        		<div class="item active">  <img src="<c:url value="/resources/images/images_fond/images_fond.jpg" />    "> </div>
+	        		<div class="item active"> <img src="<c:url value="/resources/images/Hay_Day/images1.jpg" />    "> </div>
+	        		<div class="item"> <img src="<c:url value="/resources/images/Hay_Day/images5.jpg" />    ">  </div>
+	        		<div class="item active">  <img src="<c:url value="/resources/images/Hay_Day/images3.jpg" />    "> </div>
 	    		</div>
 	                                                                   <!-- Fléches de navigation --> 
 		 	<a class="left carousel-control" href="#monPremierCarrousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
 	 		<a class="right carousel-control" href="#monPremierCarrousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
-	
+	  
 		</div> 
     	
     </section>
@@ -110,76 +114,75 @@
     
     <section class="journal text-center">
     	 <div class="row">
-    	 	<div class="col-xs-6 col-md-6">
-    	 		<p> 
-    	 			"Quanta autem vis amicitiae sit, ex hoc intellegi maxime potest, quod ex infinita societate generis humani, quam conciliavit 
-    	 			ipsa natura, ita contracta res est et adducta in angustum ut omnis caritas aut inter duos aut inter paucos iungeretur. 
-    	 		</p>
-    	 		
-    	 		<p> 
-    	 			Nec sane haec sola pernicies orientem diversis cladibus adfligebat. Namque et Isauri, quibus est usitatum saepe pacari saepeque 
-    	 			inopinis excursibus cuncta miscere, ex latrociniis occultis et raris, alente inpunitate adulescentem in peius audaciam ad bella gravia 
-    	 			proruperunt, diu quidem perduelles spiritus inrequietis motibus erigentes, hac tamen indignitate perciti vehementer, ut iactitabant, 
-    	 			quod eorum capiti quidam consortes apud Iconium Pisidiae oppidum in amphitheatrali spectaculo feris praedatricibus obiecti sunt praeter 
-    	 			morem. 
-    	 		</p>
-    	 		
-    	 		<p> 
-    	 			Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis 
-    	 			concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem 
-    	 			non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit. 
-    	 		</p>
-    	 		
-    	 		<p>
-    	 			Equitis Romani autem esse filium criminis loco poni ab accusatoribus neque his iudicantibus oportuit neque defendentibus nobis. Nam 
-    	 			quod de pietate dixistis, est quidem ista nostra existimatio, sed iudicium certe parentis; quid nos opinemur, audietis ex iuratis; 
-    	 			quid parentes sentiant, lacrimae matris incredibilisque maeror, squalor patris et haec praesens maestitia, quam cernitis, luctusque 
-    	 			declarat.
-    	 		</p>
-    	 		
-    	 		<p> 
-    	 			Non ergo erunt homines deliciis diffluentes audiendi, si quando de amicitia, quam nec usu nec ratione habent cognitam, disputabunt. 
-    	 			Nam quis est, pro deorum fidem atque hominum! qui velit, ut neque diligat quemquam nec ipse ab ullo diligatur, circumfluere omnibus 
-    	 			copiis atque in omnium rerum abundantia vivere? Haec enim est tyrannorum vita nimirum, in qua nulla fides, nulla caritas, nulla 
-    	 			stabilis benevolentiae potest esse fiducia, omnia semper suspecta atque sollicita, nullus locus amicitiae.
-    	 		</p>
-    	 		
-    	 		<p>
-    	 			Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, 
-    	 			adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur ad mortem, 
-    	 			indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas 
-    	 			admisisse convictus inmane, vivus exustus est.
-    	 		</p>
-    	 		
-    	 		<p> 
-    	 			Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel commodi alicuius, quod idem adipisci 
-    	 			uterque non posset. Quod si qui longius in amicitia provecti essent, tamen saepe labefactari, si in honoris contentionem incidissent; pestem 
-    	 			enim nullam maiorem esse amicitiis quam in plerisque pecuniae cupiditatem, in optimis quibusque honoris certamen et gloriae; ex quo 
-    	 			inimicitias maximas saepe inter amicissimos exstitisse.
-    	 		</p>
-    	 		
-    	 		<p> 
-    	 			Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere 
-    	 			catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut 
-    	 			postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur.
-    	 		</p>
-    	 		
-    	 		<p> 
-    	 			Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occulte, incertum quo locante vel cuius usibus apparatum. 
-    	 			ideoque rector provinciae tunc pater Apollinaris eiusdem nominis ut conscius ductus est aliique congregati sunt ex diversis civitatibus
-    	 			 multi, qui atrocium criminum ponderibus urgebantur.
-    	 		</p>
-    	 		
-    	 		<p> 
-    	 			Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad 
-    	 			hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis
-    	 		 	erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati 
-    	 		 	tributus".
-    	 		</p>
+    		 <h3> Ce que la presse dit sur nous </h3>
+    	 		<div class="col-xs-6 col-md-7">
+    	 
+	    	 		<p> 
+	    	 			"Quanta autem vis amicitiae sit, ex hoc intellegi maxime potest, quod ex infinita societate generis humani, quam conciliavit 
+	    	 			ipsa natura, ita contracta res est et adducta in angustum ut omnis caritas aut inter duos aut inter paucos iungeretur. 
+	    	 		</p>
+	    	 		
+	    	 		<p> 
+	    	 			 Players were eager to wage war since the game was in its infancy. The team presumed that they would one day release Clan Wars, 
+	    	 			 but not before months of planning, quite a few hours of lost sleep and, subsequently, many liters of caffeine
+	    	 		</p>
+	    	 		
+	    	 		<p> 
+	    	 			Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis 
+	    	 			concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem 
+	    	 			non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit. 
+	    	 		</p>
+	    	 		
+	    	 		<p>
+	    	 			Equitis Romani autem esse filium criminis loco poni ab accusatoribus neque his iudicantibus oportuit neque defendentibus nobis. Nam 
+	    	 			quod de pietate dixistis, est quidem ista nostra existimatio, sed iudicium certe parentis; quid nos opinemur, audietis ex iuratis; 
+	    	 			quid parentes sentiant, lacrimae matris incredibilisque maeror, squalor patris et haec praesens maestitia, quam cernitis, luctusque 
+	    	 			declarat.
+	    	 		</p>
+	    	 		
+	    	 		<p> 
+	    	 			Non ergo erunt homines deliciis diffluentes audiendi, si quando de amicitia, quam nec usu nec ratione habent cognitam, disputabunt. 
+	    	 			Nam quis est, pro deorum fidem atque hominum! qui velit, ut neque diligat quemquam nec ipse ab ullo diligatur, circumfluere omnibus 
+	    	 			copiis atque in omnium rerum abundantia vivere? Haec enim est tyrannorum vita nimirum, in qua nulla fides, nulla caritas, nulla 
+	    	 			stabilis benevolentiae potest esse fiducia, omnia semper suspecta atque sollicita, nullus locus amicitiae.
+	    	 		</p>
+	    	 		
+	    	 		<p>
+	    	 			Nec minus feminae quoque calamitatum participes fuere similium. nam ex hoc quoque sexu peremptae sunt originis altae conplures, 
+	    	 			adulteriorum flagitiis obnoxiae vel stuprorum. inter quas notiores fuere Claritas et Flaviana, quarum altera cum duceretur ad mortem, 
+	    	 			indumento, quo vestita erat, abrepto, ne velemen quidem secreto membrorum sufficiens retinere permissa est. ideoque carnifex nefas 
+	    	 			admisisse convictus inmane, vivus exustus est.
+	    	 		</p>
+	    	 		
+	    	 		<p> 
+	    	 			Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel commodi alicuius, quod idem adipisci 
+	    	 			uterque non posset. Quod si qui longius in amicitia provecti essent, tamen saepe labefactari, si in honoris contentionem incidissent; pestem 
+	    	 			enim nullam maiorem esse amicitiis quam in plerisque pecuniae cupiditatem, in optimis quibusque honoris certamen et gloriae; ex quo 
+	    	 			inimicitias maximas saepe inter amicissimos exstitisse.
+	    	 		</p>
+	    	 		
+	    	 		<p> 
+	    	 			Siquis enim militarium vel honoratorum aut nobilis inter suos rumore tenus esset insimulatus fovisse partes hostiles, iniecto onere 
+	    	 			catenarum in modum beluae trahebatur et inimico urgente vel nullo, quasi sufficiente hoc solo, quod nominatus esset aut delatus aut 
+	    	 			postulatus, capite vel multatione bonorum aut insulari solitudine damnabatur.
+	    	 		</p>
+	    	 		
+	    	 		<p> 
+	    	 			Quae dum ita struuntur, indicatum est apud Tyrum indumentum regale textum occulte, incertum quo locante vel cuius usibus apparatum. 
+	    	 			ideoque rector provinciae tunc pater Apollinaris eiusdem nominis ut conscius ductus est aliique congregati sunt ex diversis civitatibus
+	    	 			 multi, qui atrocium criminum ponderibus urgebantur.
+	    	 		</p>
+	    	 		
+	    	 		<p> 
+	    	 			Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad 
+	    	 			hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis
+	    	 		 	erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati 
+	    	 		 	tributus".
+	    	 		</p>
     	 		
     	 	</div>
     	 	
-    	 	<div class="col-xs-6 col-md-6"> 
+    	 	<div class="col-xs-6 col-md-5"> 
     	 		<h2>
     	 			"Advenit post multos Scudilo Scutariorum tribunus velamento subagrestis ingenii persuasionis opifex callidus. qui eum adulabili 
     	 			sermone seriis admixto solus omnium proficisci pellexit vultu adsimulato saepius" 
@@ -189,53 +192,54 @@
     </section>
     
     
-    <section class="produits">
+    <section class="produits ">
 	    
+	    <h3 class="text-center majuscule"> De multiple activitées disponible : </h3>
 	    
 	    <div class="row">
-	    	<div class="col-sm-6 col-md-6 ">
+	    	<div class="col-sm-6 col-md-6 partie">
 	    		<div class="media-left">
-	    			<img class="img_produits" src="<c:url value="/resources/images/Animaux/chevre.jpg" />    ">
+	    			<img class="img_produits" src="<c:url value="/resources/images/Animaux/chevre2.jpg" />    ">
 	    		</div>
 	    		<div class="media-body">
-	    			 <h3 class="majuscule"> Gestion de Animeaux</h3>
-	    			 <p> 
+	    			 <h4 class="majuscule text-center"> Gestion de Animeaux</h4>
+	    			 <p class="text-center"> 
 	    			 	Dans ce jeu, vous aurez la possiblité de gérer des animeaux comme du chêvres, des poules ou des vâches par exemple  
 	    			 </p>
 	    		</div>
 	    	</div>
 	    	
-	    	<div class="col-sm-6 col-md-6 ">
+	    	<div class="col-sm-6 col-md-6 partie">
 	    		<div class="media-left">
 	    			<img class="img_produits" src="<c:url value="/resources/images/Carottes/carootes.jpg" />    ">
 	    		</div>
 	    		<div class="media-body">
-	    			 <h3 class="majuscule"> Gestion des récoltes</h3>
-	    			 <p> 
+	    			 <h4 class="majuscule text-center"> Gestion des récoltes</h4>
+	    			 <p class="text-center"> 
 	    			 	Dans ce jeu, vous aurez la possiblité de gérer des récoltes comme du blés, des carottes ou des pomme de terre par exemple  
 	    			 </p>
 	    		</div>
 	    	</div>
 	    	
-	    	<div class="col-sm-6 col-md-6 ">
+	    	<div class="col-sm-6 col-md-6 partie">
 	    		<div class="media-left">
-	    			<img class="img_produits" src="<c:url value="/resources/images/Fromage_chêvre/leche054.jpg" />    ">
+	    			<img class="img_produits" src="<c:url value="/resources/images/Fromage_chêvre/Gamme copie.jpg" />    ">
 	    		</div>
 	    		<div class="media-body">
-	    			 <h3 class="majuscule"> Gestion des ressource </h3>
-	    			 <p> 
+	    			 <h4 class="majuscule text-center"> Gestion des ressource </h4>
+	    			 <p class="text-center"> 
 	    			 	Dans ce jeu, vous aurez la possiblité de gérer des ressource comme du fromage de Chêvre, des oeufs ou du lait par exemple  
 	    			 </p>
 	    		</div>
 	    	</div>
 	    	
-	    	<div class="col-sm-6 col-md-6 ">
+	    	<div class="col-sm-6 col-md-6 partie">
 	    		<div class="media-left">
-	    			<img class="img_produits" src="<c:url value="/resources/images/Fermier/fermier.jpg" />    ">
+	    			<img class="img_produits" src="<c:url value="/resources/images/Fermier/500_F_28526102_b3MRV41myxjOY1o5r9JRfoLibO9hcc94.jpg" />    ">
 	    		</div>
 	    		<div class="media-body">
-	    			 <h3 class="majuscule"> Gestion des fermier </h3>
-	    			 <p> 
+	    			 <h4 class="majuscule text-center"> Gestion des fermier </h4>
+	    			 <p class="text-center"> 
 	    			 	Dans ce jeu, vous aurez la possiblité avec les fermier de récolter les récoltes, de les nourires, ... par exemple  
 	    			 </p>
 	    		</div>
@@ -244,6 +248,40 @@
 	    </div>
     </section>
     
+    
+    <section class="communaute"> 
+    	<div class="row"> 
+    		<div class="col-sm-6 col-md-3">
+    			<h3> Notre communauté </h3>
+    		</div>
+    		
+    		<div class="col-sm-6 col-md-9"> 
+    			<h3> La Ferme M.G.L Forums : </h3>
+    				<p> Retrouver toutes les dernières informations sur notre blog  </p>
+    					<button href="http://supercell.com/en/games/clashofclans/"> Lien vers notre blog </button>
+    						<hr>
+    							<p class="text-center"> Suivez nous sur les réseaux sociaux, </p> <br>
+    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/facebook2.png" />    ">
+    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/google-plus.png" />    ">
+    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/instagram-1581266_960_720.jpg" />    ">
+    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/Pinterest.png" />    ">
+    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/Twitter_Bird.svg.png" />    ">
+    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/YouTube-social-icon2.jpg" />    ">
+    		</div>
+    	</div>
+    </section>
+    
+    
+    
+    <footer> 
+    	<div class="footer-left">
+            <h4> <i class="fa fa-copyright" aria-hidden="true"></i> La Ferme M.G.L </h4>
+        </div>
+        
+        <div class="footer-right "> 
+        	<h4 href="http://supercell.com/en/games/clashofclans/"> Condition génral de vente </h4>
+        </div>
+    </footer>
     
     
     

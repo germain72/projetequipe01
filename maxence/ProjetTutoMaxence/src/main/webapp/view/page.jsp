@@ -35,7 +35,7 @@
                     <a href="page.jsp" class="dropdown-toggle" data-toggle="dropdown"> Acceuil </a> 
                 </li>
                 <li> 
-                    <a href="">Présentation</a> 
+                    <a <c:url value="/view/Presentation.jsp" />  >Présentation</a> 
                 </li>
                 <li> 
                     <a href="#" class="telechargement"> Téléchargement </a>  
@@ -45,7 +45,7 @@
                 </li>
                 
                 <li> 
-                    <img class="log_in" src="<c:url value="/resources/images/log_in.png" />    ">
+                    <img class="log_in" src="<c:url value="/resources/images/log in/log_in.png" />    ">
                 </li>
             </ul>
         </div>    
@@ -57,8 +57,7 @@
 		<div class="commentaires">
 			<h4> "Ce jeu est une réel bouffé d'aire en therme de gestion de ferme"</h4>
 		</div>    
-    		<img class="logo" src="<c:url value="/resources/images/images_fond/image_fond.png" />    ">
-    		<h1 class="text-center"> IMAGE DE FOND </h1>
+    		<img class="img-fond" src="<c:url value="/resources/images/images_fond/image_fond.png" />    ">
     </section>
     
     
@@ -278,12 +277,12 @@
         </div>
         
         <div class="float-right"> 
-        	<h4> <a href="http://supercell.com/en/privacy-policy/" > Politique de confidentialité </a> </h4>
+        	<h4> <a href="<c:url value="/view/Pol_conf.jsp" /> ">  Politique de confidentialité </a> </h4>
         </div>
         
         
         <div class="float-right"> 
-        	<h4> <a href="http://supercell.com/en/terms-of-service/fr/"> Condition génral de vente </a> </h4>
+        	<h4> <a href="<c:url value="/view/Condition_Gen-Vente.jsp" /> "> Condition génral de vente </a> </h4>
         </div> <br> <br> <br>
         
         <div class="text-center">

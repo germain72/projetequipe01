@@ -40,13 +40,12 @@
                 <li> 
                     <a href="#" class="telechargement"> Téléchargement </a>  
                 </li>
+                <li> 
+                    <a href="mailto:maxence.doulle@orange.com" class="contact"> Nous contacter </a>  
+                </li>
                 
                 <li> 
                     <img class="log_in" src="<c:url value="/resources/images/log_in.png" />    ">
-                    <ul class="dropdown-menu">
-                        <li> <a href="">Sur place</a> </li>
-                        <li> <a href="">A emporter</a> </li>
-                    </ul>
                 </li>
             </ul>
         </div>    
@@ -204,7 +203,7 @@
 	    		<div class="media-body">
 	    			 <h4 class="majuscule text-center"> Gestion de Animeaux</h4>
 	    			 <p class="text-center"> 
-	    			 	Dans ce jeu, vous aurez la possiblité de gérer des animeaux comme du chêvres, des poules ou des vâches par exemple  
+	    			 	Tous les animaux fermier y seront présent tel que les chêvres, des poules ou des vâches. 
 	    			 </p>
 	    		</div>
 	    	</div>
@@ -216,7 +215,7 @@
 	    		<div class="media-body">
 	    			 <h4 class="majuscule text-center"> Gestion des récoltes</h4>
 	    			 <p class="text-center"> 
-	    			 	Dans ce jeu, vous aurez la possiblité de gérer des récoltes comme du blés, des carottes ou des pomme de terre par exemple  
+	    			 	Vous aurez la possiblité de gérer des récoltes comme du blés, des carottes ou des pomme de terre.  
 	    			 </p>
 	    		</div>
 	    	</div>
@@ -228,7 +227,7 @@
 	    		<div class="media-body">
 	    			 <h4 class="majuscule text-center"> Gestion des ressource </h4>
 	    			 <p class="text-center"> 
-	    			 	Dans ce jeu, vous aurez la possiblité de gérer des ressource comme du fromage de Chêvre, des oeufs ou du lait par exemple  
+	    			 	Des ressource comme du fromage de Chêvre, des oeufs ou du lait vont seront fourni.  
 	    			 </p>
 	    		</div>
 	    	</div>
@@ -240,7 +239,7 @@
 	    		<div class="media-body">
 	    			 <h4 class="majuscule text-center"> Gestion des fermier </h4>
 	    			 <p class="text-center"> 
-	    			 	Dans ce jeu, vous aurez la possiblité avec les fermier de récolter les récoltes, de les nourires, ... par exemple  
+	    			 	Les fermier pouront récolter des récoltes et s'occuper des animaux, mais dans le même temps, il faudras nourires les fermiers comme les animeaux.  
 	    			 </p>
 	    		</div>
 	    	</div>
@@ -261,7 +260,7 @@
     					<button href="http://supercell.com/en/games/clashofclans/"> Lien vers notre blog </button>
     						<hr>
     							<p class="text-center"> Suivez nous sur les réseaux sociaux, </p> <br>
-    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/facebook2.png" />    ">
+    								<img href="" class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/facebook2.png" />    ">
     								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/google-plus.png" />    ">
     								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/instagram-1581266_960_720.jpg" />    ">
     								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/Pinterest.png" />    ">
@@ -273,13 +272,26 @@
     
     
     
-    <footer> 
-    	<div class="footer-left">
-            <h4> <i class="fa fa-copyright" aria-hidden="true"></i> La Ferme M.G.L </h4>
+    <footer class="container"> 
+    	<div class="float-left">
+            <h4> &copy;La Ferme M.G.L </h4>
         </div>
         
-        <div class="footer-right "> 
-        	<h4 href="http://supercell.com/en/games/clashofclans/"> Condition génral de vente </h4>
+        <div class="float-right"> 
+        	<h4> <a href="http://supercell.com/en/privacy-policy/" > Politique de confidentialité </a> </h4>
+        </div>
+        
+        
+        <div class="float-right"> 
+        	<h4> <a href="http://supercell.com/en/terms-of-service/fr/"> Condition génral de vente </a> </h4>
+        </div> <br> <br> <br>
+        
+        <div class="text-center">
+            <p class="white"> 
+            	<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/facebook2.png" />    "> Like nous sur Facebook 
+            	<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/Twitter_Bird.svg.png" />    "> Follow nous sur Twitter 
+            	<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/linkedin.png" />    "> Follow nous sur Linkedin
+            </p>
         </div>
     </footer>
     

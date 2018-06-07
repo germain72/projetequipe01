@@ -1,33 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" isELIgnored="false"
-pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	isELIgnored="false" pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+<%@taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link
+	href="<c:url value="/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css" />"
+	rel="stylesheet">
+<link
+	href="<c:url value="/resources/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"/>"
+	rel="stylesheet">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript"
+	src="<c:url value="/resources/bootstrap-3.3.7-dist/js/bootstrap.min.js"/>"></script>
+<link href="<c:url value="/resources/cge.css"/>" rel="stylesheet">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
-
-<form method="GET" action="save.jsp" target="_blank">
-      <p>
-       <label for="pays">Dans quel pays habitez-vous ?</label><br />
-       <select name="pays" id="pays">
-           <option value="france">France</option>
-           <option value="espagne">Espagne</option>
-           <option value="italie">Italie</option>
-           <option value="royaume-uni">Royaume-Uni</option>
-           <option value="canada">Canada</option>
-           <option value="etats-unis">États-Unis</option>
-           <option value="chine">Chine</option>
-           <option value="japon">Japon</option>
-       </select>
-   </p>
-       <label for="nom">Quel est votre nom ?</label>
-       <input type="text" name="nom" id="nom" />
-
-       <label for="prenom">Quel est votre prénom ?</label>
-       <input type="text" name="prenom" id="prenom" />
- 
-       <label for="email">Quel est votre e-mail ?</label>
-       <input type="email" name="email" id="email" />
-   <input type="submit" value="Envoyer" />
-</form>
+<h2 id="textgui">Merci</h2>
+<h2 id="textgui">Tu as sauvegardé avec succès</h2>

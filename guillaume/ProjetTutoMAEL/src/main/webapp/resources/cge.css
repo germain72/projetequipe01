@@ -21,3 +21,14 @@
 #save {
 	text-align: center;
 	}
+	
+#textgui {
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration:overline;
+	text-overflow: clip;
+	text-shadow: blue;
+	font-style: oblique;
+	font-weight: bold;
+	color: black;
+	}

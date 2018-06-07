@@ -1,0 +1,298 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: AntiqueWhite;
+}
+
+*{
+    font-family: 'Kreon', serif;
+}
+
+
+															/* Header / Nav */
+header{
+    width: 100%;
+    height: 50px;
+    opacity: 80%;
+    color: white;
+    padding-bottom: 70.5px;
+}
+
+header h1{
+    float: left;
+}
+
+header nav {
+    float: right;
+    background-color: #212d39;
+    color: white;
+    padding: 20px;
+}
+
+.navbar-inverse {
+    background-color: blue;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: red;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
+    background-color: #3e2c0a;
+}
+
+.logo {
+    width: 65px;
+    background-color: dimgrey;
+    position: absolute;
+    left: 5px;
+}
+
+/*.telechargement { 
+	margin-right: 50px;
+} */
+
+.log_in {
+	float: right;
+	width: 50px;
+}
+
+
+
+
+
+
+
+
+										    /* Images de fond du site  */
+.commentaires {
+	margin-top: 20px;
+	width: 150px;
+	font-style: italic;
+	text-align: center;
+	padding: 20px;
+	position: absolute;
+	left: 15px;
+	border-radius: 200px;
+	border: 5px double black;
+	margin: 15px;
+}
+
+.img-fond {
+	width: 100%;
+	height: 400px; ;
+	background-color: red;
+	/*background-image: url ()/resources/images/images_fond/image_fond.png"> ;            /* A REVOIR  */ 
+	padding: 20px;
+	margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+											/* Video de présentation */
+video {
+	width: 1400px;
+	height: 400px;
+	margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+											/* CAROUSEL */
+.carousel {
+	height: 400px;
+	margin-top: 100px;
+	padding: 20px;
+}
+
+.carousel img {
+	width: 660px;
+	height:388;
+}
+
+
+
+
+
+
+
+
+											/* Promotion du moment */
+											
+.promo {
+	margin-top: 200px;
+	background-color: ActiveCaption;
+	padding: 20px;
+}
+
+.promo button {
+	background-color: red;
+	border-radius: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+.promo h3 {
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+												/* Mise ç jour de l'application  */
+.mise_a_jour {
+	margin-top: 100px;
+	background-color: DarkBlue;
+	color: white;
+	padding: 20px;
+}
+
+.mise_a_jour button{
+	background-color: red;
+	border-radius: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+
+
+
+
+
+
+
+												/* Article de journal */
+										
+.journal {
+	background-color: black;
+	color: white;
+	margin-top: 100px;
+	padding: 20px;  
+}
+
+.journal h2{
+	padding-top: 50%;
+}
+
+.journal h3 {
+	text-decoration: underline;
+	text-transform: capitalize;
+	margin-bottom: 60px;
+}
+
+
+
+
+
+
+												/* Gestion des Ressources */
+.produits {
+	background-color: Gold;
+	margin-top: 100px;
+	padding: 20px;  
+}
+
+
+.img_produits {
+	height: 100px;
+	border-radius: 50px;
+	border: double blue 3px;
+}
+
+.produits img {
+	margin-right: 50px;
+}
+
+.produits h3 {
+	text-decoration: underline;
+	text-transform: capitalize;
+	margin-bottom: 60px;
+}
+
+.partie {
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+												/* Communauté */
+.communaute {
+	background-color: SandyBrown;
+	margin-top: 100px;
+	padding: 20px;  
+	margin-bottom: 60px;
+}
+
+.communaute button{
+	background-color: red;
+	border-radius: 10px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 60px;
+}
+
+.reseaux_sociaux {
+	background-color: Fuchsia;
+}
+
+.reseaux {
+	width: 35px;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+									/* Footer */
+footer {
+	background-color: maroon;
+	color : white;
+	padding-top: 15px;
+	margin-bottom: 200px;
+}
+
+.float-left h3{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.float-left {
+    float: left;
+    padding-left: 50px;
+}
+
+.float-right {
+    float: right;
+    right: 50px;
+    padding-left: 10px;
+}
+
+footer img {
+	margin-left: 15px;
+}

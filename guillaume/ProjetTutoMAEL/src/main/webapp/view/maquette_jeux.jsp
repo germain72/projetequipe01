@@ -5,9 +5,8 @@
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<!-- 
-<title><spring:message code="titre.application" /></title>
-<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link
 	href="<c:url value="/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css" />"
 	rel="stylesheet">
@@ -158,57 +157,60 @@
 	</div>
 	<div id="fond2">
 		<div class="panel-body">
-		<div class="row">
-			<div class="col-md-1">
-				<div class="container-fluid">
-					<table class="table">
-						<tbody>
-							<tr>
-								<td valign="top">
-									<table class="table">
-										<tbody>
-											<tr class="bg-warning">
-												<td>
-													<a href="listeCourses.jsp" target="_blank">Panier </a></td>
-											</tr>
-											<tr class="bg-warning">
-												<td> <a href="creation.jsp" target="_blank">Ajouter au panier </a></td>
-											</tr>
-											<tr class="bg-warning">
-												<td> <a href="suppression.jsp" target="_blank">Suppression d'élément
-														du panier </a></td>
-											</tr>
-											<tr class="bg-warning">
-												<td> <a href="modification.jsp" target="_blank">Modification d'élément
-														du panier </a></td>
-											</tr>
-										</tbody>
-									</table>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="row">
+				<div class="col-md-1">
+					<div class="container-fluid">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td valign="top">
+										<table class="table">
+											<tbody>
+												<tr class="bg-warning">
+													<td><a href="listeCourses.jsp" target="_blank">Panier
+													</a></td>
+												</tr>
+												<tr class="bg-warning">
+													<td><a href="creation.jsp" target="_blank">Ajouter
+															au panier </a></td>
+												</tr>
+												<tr class="bg-warning">
+													<td><a href="suppression.jsp" target="_blank">Suppression
+															d'élément du panier </a></td>
+												</tr>
+												<tr class="bg-warning">
+													<td><a href="modification.jsp" target="_blank">Modification
+															d'élément du panier </a></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-1 col-md-offset-md-1">
+					<video autoplay="autoplay" loop="loop" preload="auto"
+						controls="controls"
+						src="<c:url value="/resources/video/gui.mp4"/> "></video>
 				</div>
 			</div>
-			<div class="col-md-1 col-md-offset-md-1">
-			<video autoplay="autoplay" loop="loop" preload="auto" controls="controls" src="<c:url value="/resources/video/gui.mp4"/> " ></video>
+			<div class="panel-footer">
+				<div class="container">
+					<div class="col-md-offset-2 col-md-4">
+						Enregistrer partie <a href="sauvegarde.jsp" target="_blank"> <img
+							src="<c:url value="/resources/images/save.png"/>">
+						</a>
+					</div>
+					<div class="col-md-4">
+						Quitter <a href="#"> <a href="#" target="_blank"> <img
+							src="<c:url value="/resources/images/exit.png"/>">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="panel-footer">
-			<div class="container">
-				<div class="col-md-offset-2 col-md-4">
-					Enregistrer partie <a href="sauvegarde.jsp" target="_blank"> <span
-						class="glyphicon glyphicon-save"></span>
-					</a>
-				</div>
-				<div class="col-md-4">
-					Quitter <a href="#"> <span
-						class="glyphicon glyphicon-folder-close"></span>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
 	</div>
 </div>
-	
+

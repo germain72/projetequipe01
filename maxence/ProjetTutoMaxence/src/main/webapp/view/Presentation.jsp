@@ -35,7 +35,7 @@
                     <a href="page.jsp" class="dropdown-toggle" data-toggle="dropdown"> Acceuil </a> 
                 </li>
                 <li> 
-                    <a href="">Présentation</a> 
+                    <a href="<c:url value="/view/Presentation.jsp" /> >"  >Présentation</a>
                 </li>
                 <li> 
                     <a href="#" class="telechargement"> Téléchargement </a>  
@@ -45,7 +45,7 @@
                 </li>
                 
                 <li> 
-                    <img class="log_in" src="<c:url value="/resources/images/log_in.png" />    ">
+                    <img class="log_in" src="<c:url value="/resources/images/log in/log_in.png" />    ">
                 </li>
             </ul>
         </div>    
@@ -53,24 +53,45 @@
     </nav> 
     
     
-    <img class="reseaux" src="<c:url value="/resources/images/Open Space/Open_Space.jpg" />    "> 
+    <img class="Open_Space" src="<c:url value="/resources/images/Open Space/Open_Space.jpg" />    "> 
+    	<h2 class="text-center"> Notre histoire   </h2>
     
     
     <section class="notre-histoire">
-    	<h2 class="text-center"> Notre histoire   </h2>
+    	
     	
     	<p class="text-center"> Fondé le 28 Mai 2018 par trois entrepreneur absolument géniaux, Maxence Doullé, Laura Torres et Guilluame Ducrotoy, La Ferme M.G.L avait pour
     	focation au départ de lier les personnes  au monde de l'argriculture. Suite à leurs succé, ils décidérent de quitter leur études de BTS Assisatnt
-    	de gestion pour fonder leurs propre Holding "Supercell". 
+    	de gestion pour fonder leurs propre Holding "M.G.L Industrie". 
     	
     </section>
     
     
-    <section class="aujourdhui"> 
-    	<h2 class="text-center"> Supercell aujourdh'ui </h2>
-    	
-    	<div id="triangle-1"> 5 Burreau dans le monde entier </div>
-    	<div id="triangle-2"></div>
+    <section class="aujourdhui container text-center">
+    	<h2 class=""> Supercell aujourdh'ui </h2> 
+	    	<div class="row">
+		    	<div class="col-sm-6 col-md-3">
+		    		<div class="media-left chrifre_clées">
+	    			<p> plus de 1 millions d'utilisateurs </p>
+	    			</div>
+		    	</div>
+		    	<div class="col-sm-6 col-md-3">
+		    		<div class="media-left chrifre_clées">
+	    				<p> 3 burreaux </p>
+	    			</div>
+		    	</div>
+		    	<div class="col-sm-6 col-md-3">
+		    		<div class="media-left chrifre_clées">
+	    				<p> 30 + nationalitées </p>
+	    			</div>
+		    	</div>
+		    	<div class="col-sm-6 col-md-3">
+		    		<div class="media-left chrifre_clées">
+	    				<p> 5 jeux </p>
+	   				 </div>
+		    	</div>
+		    </div>
+    
     </section>
     
     

@@ -42,15 +42,13 @@ header nav {
 }
 
 .logo {
-    width: 65px;
+    width: 83px;
     background-color: dimgrey;
     position: absolute;
     left: 5px;
 }
 
-/*.telechargement { 
-	margin-right: 50px;
-} */
+
 
 .log_in {
 	float: right;
@@ -73,19 +71,19 @@ header nav {
 	font-weight: bolder;
 	padding: 20px;
 	position: absolute;
-	top: 195px;
-	left: 15px;
+	top: 330px;
+	left: 30px;
 	border-radius: 200px;
 	border: 5px double black;
 	margin: 15px;
-	color: red;
+	color: black;
 }
 
 .img-fond {
 	background-image: url (<img src="<c:url value="/resources/images/images_fond/image_fond.png" />    ">) ;            /* A REVOIR  */ 
-	margin-top: 80px;
+	margin-top: 50px;
 	margin-bottom: 60px;
-	width: 1200px;
+	width: 100%;
 }
 
 
@@ -97,7 +95,7 @@ header nav {
 
 											/* Video de présentation */
 video {
-	width: 1400px;
+	width: 100%;
 	height: 400px;
 	margin-top: 100px;
 }
@@ -157,11 +155,10 @@ video {
 
 
 
-												/* Mise ç jour de l'application  */
+												/* Mise à jour de l'application  */
 .mise_a_jour {
 	margin-top: 100px;
-	background-color: DarkBlue;
-	color: white;
+	background-color: AntiqueWhite;
 	padding: 20px;
 }
 
@@ -205,7 +202,7 @@ video {
 
 												/* Gestion des Ressources */
 .produits {
-	background-color: Gold;
+	background-color: ActiveCaption;
 	margin-top: 100px;
 	padding: 20px;  
 }
@@ -285,22 +282,27 @@ video {
 .aujourdhui {
 	font-style: italic;
 	margin-top: 90px;
+	margin-bottom: 60px;
+	background-color: Silver
 }
 
-#triangle-1 {
-    width: 137x;
-    height: 138px;
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-bottom: 30px solid purple;
+.aujourdhui h2{
+	margin-bottom: 30px;
 }
 
-#triangle-2 {
-    width: 137px;
-    height: 138px;
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-top: 30px solid purple;
+.Open_Space {
+	margin-top: 50px;
+	width: 1183px;
+}
+
+.chrifre_clées {
+	width: 20px;
+	height: 20px;
+	border-radius: 50px;
+	border: double black 3px;
+	text-align: center;
+	background-color: Coral;
+	padding: 20px;
 }
 
 

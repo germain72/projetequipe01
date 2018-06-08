@@ -35,12 +35,19 @@ public class CreerListeClientsController {
 			Client cl = new Client();
 			cl.setNomclient(CreationClients.getNomclient());
 			cl.setPrenomclient(CreationClients.getPrenomclient());
-			cl.setNaissanceclient(CreationClients.getNaissanceclient());
 			cl.setPseudoclient(CreationClients.getPseudoclient());
 			cl.setMdpclient(CreationClients.getMdpclient());
-			cl.setAdmin(false);
-			service.creerClient(cl);	
+			cl.setAdmin(CreationClients.getAdmin());//false en dur = prbl
+			cl.setNaissanceclient
+			(DateTime.getDateFormat(CreationClients.getNaissanceclient(),""));
+			service.creerClient(cl);
+			
 		}
-		return afficher(pModel);
+		//changer le return pour qu'il mène à la liste des clients:
+		//Enlever afficher(pModel);
+		//remplacer par "listeClients";
+		final List<Client> clients = service.listeClients();
+		pModel.addAttribute("listeClients", clients);
+		return "listeClients";
 	}
 }

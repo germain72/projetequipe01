@@ -32,21 +32,30 @@
         <div class="navbar-collapse collapse" id="menu">
             <ul class="nav navbar-nav navbar-right">
                 <li> 
-                    <a href="page.jsp" class="dropdown-toggle" data-toggle="dropdown"> Acceuil </a> 
+                    <a href="<c:url value="/view/page.jsp" /> class="dropdown-toggle" data-toggle="dropdown"> Acceuil </a> 
                 </li>
                 <li> 
-                    <a <c:url value="/view/Presentation.jsp" />  >Présentation</a> 
+                    <a href="<c:url value="/view/Presentation.jsp" /> >"  >Présentation</a> <!-- Re -->
+                    <a href="<c:url value="/view/Pol_conf.jsp" /> "> </a>
                 </li>
                 <li> 
-                    <a href="#" class="telechargement"> Téléchargement </a>  
+                    <a href="" class="telechargement"> Site du jeu en ligne </a>  
                 </li>
                 <li> 
+                    <a href="<c:url value="/resources/Zip" /> " class="telechargement"> Téléchargement </a>  <!-- Mettre le zip de téléchargement dedans -->
+                </li>
+                <li> resources
                     <a href="mailto:maxence.doulle@orange.com" class="contact"> Nous contacter </a>  
                 </li>
                 
+                
                 <li> 
-                    <img class="log_in" src="<c:url value="/resources/images/log in/log_in.png" />    ">
-                </li>
+                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                	<img class="log_in" src="<c:url value="/resources/images/log in/log_in.png" />    "> <span class="caret"></span></a>
+          				<ul class="dropdown-menu">
+            				<li><a href="#"> Se connecter</a></li>
+            				<li><a href="#"> S'inscrire</a></li>
+               </li>
             </ul>
         </div>    
         </div>

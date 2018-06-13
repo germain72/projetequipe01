@@ -18,48 +18,49 @@
 
 
 <body>
-
- <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-            	<img class="logo" src="<c:url value="/resources/images/Logo/logo1.png" />    ">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu"></button>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-            </div>
-            
-        <div class="navbar-collapse collapse" id="menu">
-            <ul class="nav navbar-nav navbar-right">
-                <li> 
-                    <a href="<c:url value="/view/page.jsp" /> class="dropdown-toggle" data-toggle="dropdown"> Acceuil </a> 
-                </li>
-                <li> 
-                    <a href="<c:url value="/view/Presentation.jsp" /> >"  >Présentation</a> <!-- Re -->
-                    <a href="<c:url value="/view/Pol_conf.jsp" /> "> </a>
-                </li>
-                <li> 
-                    <a href="" class="telechargement"> Site du jeu en ligne </a>  
-                </li>
-                <li> 
-                    <a href="<c:url value="/resources/Zip" /> " class="telechargement"> Téléchargement </a>  <!-- Mettre le zip de téléchargement dedans -->
-                </li>
-                <li> resources
-                    <a href="mailto:maxence.doulle@orange.com" class="contact"> Nous contacter </a>  
-                </li>
-                
-                
-                <li> 
-                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                	<img class="log_in" src="<c:url value="/resources/images/log in/log_in.png" />    "> <span class="caret"></span></a>
-          				<ul class="dropdown-menu">
-            				<li><a href="#"> Se connecter</a></li>
-            				<li><a href="#"> S'inscrire</a></li>
-               </li>
-            </ul>
-        </div>    
-        </div>
-    </nav> 
+	<header>
+	 <nav class="navbar navbar-default navbar-fixed-top container">
+	        <div class="container">
+	            <div class="navbar-header">
+	            	<img class="logo" src="<c:url value="/resources/images/Logo/logo1.png" />    ">
+	                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu"></button>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	            </div>
+	            
+	        <div class="navbar-collapse collapse" id="menu">
+	            <ul class="nav navbar-nav navbar-right">
+	                <li> 
+	                    <a href="<c:url value="/view/page.jsp" /> class="dropdown-toggle" data-toggle="dropdown"> Acceuil </a> 
+	                </li>
+	                <li> 
+	                    <a href="<c:url value="/view/Presentation.jsp" /> >"  >Présentation</a> <!-- Re -->
+	                    <a href="<c:url value="/view/Pol_conf.jsp" /> "> </a>
+	                </li>
+	                <li> 
+	                    <a href="" class="telechargement"> Site du jeu en ligne </a>  
+	                </li>
+	                <li> 
+	                    <a href="<c:url value="/resources/Zip" /> " class="telechargement"> Téléchargement </a>  <!-- Mettre le zip de téléchargement dedans -->
+	                </li>
+	                <li>
+	                    <a href="mailto:maxence.doulle@orange.com" class="contact"> Nous contacter </a>  
+	                </li>
+	                
+	                
+	                <li> 
+	                	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+	                	<img class="log_in" src="<c:url value="/resources/images/log in/log_in.png" />    "> <span class="caret"></span></a>
+	          				<ul class="dropdown-menu">
+	            				<li><a href="#"> Se connecter</a></li>
+	            				<li><a href="#"> S'inscrire</a></li>
+	               </li>
+	            </ul>
+	        </div>    
+	        </div>
+	    </nav> 
+	</header>
     
     
     <section class="img-fond">
@@ -71,7 +72,7 @@
     
     
     <section class="video">
-    	<h3 class="text-center"> Bienvenue sur notre jeux </h3>
+    	<h3 class="text-center white"> Bienvenue sur notre jeux </h3>
     			<video  loop="loop" autoplay="autoplay" controls="controls" class="text-center" src="<c:url value="/resources/film/Hay_Day_360_Hug (1).mp4"/>"> </video>
     </section>
     

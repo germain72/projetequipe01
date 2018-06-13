@@ -1,1 +1,22 @@
 @charset "ISO-8859-1";
+
+.btn-default{
+	background-color:red;
+	color:white;
+	box-shadow: inset 0 1px 0 red,0 1px 1px 
+	black;
+	background-image: linear-gradient(to bottom,red 0,#e0e0e0 100%);
+}
+/* impair */
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: red;
+   color: white;
+}
+
+/* pair */
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   color: red;
+}
+.table-striped {
+	color: red;
+}

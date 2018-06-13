@@ -35,4 +35,6 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	<c:url value="/afficherCreationListeClients" var="btnretour"/>
+	<a class="btn btn-default btnretour"href="${btnretour}">retour</a>
 	

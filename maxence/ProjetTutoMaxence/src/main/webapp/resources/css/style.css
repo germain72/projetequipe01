@@ -1,7 +1,7 @@
 @charset "ISO-8859-1";
 
 body {
-	background-color: AntiqueWhite;
+	background-color: green; /* AntiqueWhite */
 }
 
 *{
@@ -14,7 +14,7 @@ header{
     width: 100%;
     height: 50px;
     opacity: 80%;
-    color: white;
+    color: red;
     padding-bottom: 70.5px;
 }
 
@@ -24,13 +24,13 @@ header h1{
 
 header nav {
     float: right;
-    background-color: #212d39;
+    background-color: maroon;;
     color: white;
     padding: 20px;
 }
 
 .navbar-inverse {
-    background-color: blue;
+    background-color: maroon;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -38,7 +38,7 @@ header nav {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{
-    background-color: #3e2c0a;
+    background-color: maroon;
 }
 
 .logo {
@@ -94,10 +94,17 @@ header nav {
 
 
 											/* Video de présentation */
-video {
+
+.video {
+	text-align: center;
 	width: 100%;
 	height: 400px;
 	margin-top: 100px;
+	margin-bottom: 100PX;
+}
+
+.video h3 {
+	color: white;
 }
 
 
@@ -112,7 +119,7 @@ video {
 											/* CAROUSEL */
 .carousel {
 	height: 400px;
-	margin-top: 100px;
+	margin-top: 200px;
 	padding: 20px;
 }
 
@@ -132,8 +139,9 @@ video {
 											
 .promo {
 	margin-top: 200px;
-	background-color: ActiveCaption;
+	background-color: AAntiqueWhite;
 	padding: 20px;
+	color: white;
 }
 
 .promo button {
@@ -159,7 +167,8 @@ video {
 .mise_a_jour {
 	margin-top: 100px;
 	background-color: AntiqueWhite;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 100px;
 }
 
 .mise_a_jour button{
@@ -179,9 +188,9 @@ video {
 												/* Article de journal */
 										
 .journal {
-	background-color: black;
+	background-color: green;
 	color: white;
-	margin-top: 100px;
+	padding-top: 100px;
 	padding: 20px;  
 }
 
@@ -202,7 +211,7 @@ video {
 
 												/* Gestion des Ressources */
 .produits {
-	background-color: ActiveCaption;
+	background-color: AntiqueWhite;
 	margin-top: 100px;
 	padding: 20px;  
 }
@@ -221,7 +230,7 @@ video {
 .produits h3 {
 	text-decoration: underline;
 	text-transform: capitalize;
-	margin-bottom: 60px;
+	padd-bottom: 60px;
 }
 
 .partie {
@@ -236,10 +245,11 @@ video {
 
 												/* Communauté */
 .communaute {
-	background-color: SandyBrown;
+	background-color: green;
 	margin-top: 100px;
 	padding: 20px;  
 	margin-bottom: 60px;
+	color: white;
 }
 
 .communaute button{

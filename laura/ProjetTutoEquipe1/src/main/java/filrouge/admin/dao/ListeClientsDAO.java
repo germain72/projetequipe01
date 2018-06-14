@@ -10,6 +10,7 @@ import javax.persistence.criteria.*;
 import org.springframework.stereotype.Repository;
 
 import filrouge.admin.bean.Client;
+import projettuto.bean.Course;
 
 @Repository
 public class ListeClientsDAO implements IListeClientsDAO{
@@ -57,5 +58,16 @@ public class ListeClientsDAO implements IListeClientsDAO{
 			return true;
 		}
 		return false;
+	}
+
+	public void modifierClient(Client cl) {
+		final CriteriaBuilder lCriteriaBuilder = entityManager.getCriteriaBuilder();
+		final CriteriaUpdate<Client>
+		
+	}
+
+	public void supprimerClient(Client cl) {
+		final Client client = entityManager.getReference(Client.class, cl.getIdclient());
+		entityManager.remove(client);	
 	}
 }

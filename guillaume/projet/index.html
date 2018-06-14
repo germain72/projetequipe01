@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+<link href="/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="/resources/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="/resources/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link href="/resources/cge.css" rel="stylesheet"/>
+</head>
+
+<body>
+<script>
+	$(document).ready(function() {
+		$("#affichefermiers").toggle();
+		$("#afficheferme").toggle();
+		$("#afficheguigui").toggle();
+		$("#affichecarottes").toggle();
+		$("#afficheblés").toggle();
+		$("#affichechèvres").toggle();
+		$("#affichefromages").toggle();
+		$("#listefermiers").click(function() {
+			$("#affichefermiers").toggle();
+		});
+		$("#listeguigui").click(function() {
+			$("#afficheguigui").toggle();
+		});
+		$("#listeferme").click(function() {
+			$("#afficheferme").toggle();
+		});
+		$("#choixf").click(function() {
+			$("#resultf").text($('#choixf option:selected').text());
+		});
+		$("#listecarottes").click(function() {
+			$("#affichecarottes").toggle();
+		});
+		$("#choixc").click(function() {
+			$("#resultc").text($('#choixc option:selected').text());
+		});
+		$("#listeblés").click(function() {
+			$("#afficheblés").toggle();
+		});
+		$("#choixbl").click(function() {
+			$("#resultbl").text($('#choixbl option:selected').text());
+		});
+		//chèvres
+		$("#listechèvres").click(function() {
+			$("#affichechèvres").toggle();
+		});
+		$("#choixch").click(function() {
+			$("#resultch").text($('#choixch option:selected').text());
+		});
+		//fromages
+		$("#listefromages").click(function() {
+			$("#affichefromages").toggle();
+		});
+		$("#choixfr").click(function() {
+			$("#resultfr").text($('#choixfr option:selected').text());
+		});
+		$("#choixguigui").click(function() {
+			$("#resultguigui").text($('#choixguigui option:selected').text());
+		});
+		$("#choixfe").click(function() {
+			$("#resultfe").text($('#choixfe option:selected').text());
+		});
+	});
+</script>
+<div class="panel panel-default fonddujeux">
+	<div class="panel-body" id="fond1">
+		<p id="titreguigui">La Ferme M-G-L</p>
+		<div class="container">
+			<div class="col-md-2">
+				<div id="listeferme">
+					<span>Gestion de la Ferme</span><br> 
+					<img src="/resources/images/fermier.png"><br>
+					<div id="afficheferme">
+						<select name="listechoixdesfermiers" class="form-control" id="choixfe">
+							<option value="1">Créer un Fermier</option>
+							<option value="2">Cultiver un Champ</option>
+						</select>
+					</div>
+					<span id="resultfe"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listefermiers">
+					<span>Nourrir la famille</span><br> 
+					<img src="/resources/images/champ.png"><br>
+					<div id="affichefermiers">
+						<select name="listechoixdesfermiers" class="form-control" id="choixf">
+							<option value="1">fermiers</option>
+							<option value="2">Chèvres</option>
+						</select>
+					</div>
+					<span id="resultf"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listecarottes">
+					<span>Carottes</span><br> 
+					<img src="/resources/images/carotte.png"><br>
+					<div id="affichecarottes">
+						<select name="listenombrecarottes" class="form-control" id="choixc">
+							<option value="1">Vendre 1 unité</option>
+						</select>
+					</div>
+					<span id="resultc"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listeblés">
+					<span>Blé</span><br>
+					<img src="/resources/images/ble.png"><br>
+					<div id="afficheblés">
+						<select name="listenombreblés" class="form-control" id="choixbl">
+							<option value="1">Vendre 1 unité</option>
+						</select>
+					</div>
+					<span id="resultbl"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listechèvres">
+					<span>Chèvres</span><br>
+					<img src="/resources/images/biket.png"><br>
+					<div id="affichechèvres">
+						<select name="listenombrechèvres" class="form-control" id="choixch">
+							<option value="1">Vendre 1 Chèvre</option>
+						</select>
+					</div>
+					<span id="resultch"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listefromages">
+					<span>Fromages</span><br> 
+					<img src="/resources/images/fromage.png"><br>
+					<div id="affichefromages">
+						<select name="listenombrefromages" class="form-control" id="choixfr">
+							<option value="1">Vendre 1 Fromage</option>
+						</select>
+					</div>
+					<span id="resultfr"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="fond2">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-1">
+					<div class="container-fluid">
+						<table class="table">
+							<tbody>
+								<tr>
+									<td valign="top">
+										<table class="table">
+											<tbody>
+												<tr class="bg-warning">
+													<td>
+														<a href="/listeCourses.html" target="_blank">Panier</a>
+													</td>
+												</tr>
+												<tr class="bg-warning">
+													<td>
+														<a href="/creation.html" target="_blank">Ajouter au panier</a>
+													</td>
+												</tr>
+												<tr class="bg-warning">
+													<td>
+														<a href="/suppression.html" target="_blank">Suppression d'élément du panier</a>
+													</td>
+												</tr>
+												<tr class="bg-warning">
+													<td>
+														<a href="/modification.html" target="_blank">Modification d'élément du panier</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-md-1 col-md-offset-md-1">
+					<video autoplay="autoplay" loop="loop" preload="auto" controls="controls" src="/resources/video/gui.mp4"></video>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<div class="container">
+					<div class="col-md-offset-2 col-md-4">Enregistrer partie
+						<a href="/sauvegarde.html">
+							<img src="/resources/images/save.png">
+						</a>
+					</div>
+					<div class="col-md-4">Quitter 
+						<a href="/quitter.html"> 
+							<img src="/resources/images/exit.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<footer class="container"> 
+    	<div class="float-left">
+            <h4> &copy;La Ferme M.G.L </h4>
+        </div>
+         <div class="text-center">
+            <p class="white"> 
+            	<a href="https://www.facebook.com/guillaume.ducrotoy.58">
+					<img class="reseaux" src="/resources/images/facebook2.png"> Like nous sur Facebook
+				</a>
+            	<img class="reseaux" src="/resources/images/Twitter_Bird.svg.png">Follow nous sur Twitter 
+            	<img class="reseaux" src="/resources/images/linkedin.png"> Follow nous sur Linkedin
+				<br>
+				<a href="http://www.gducrotoy.com">Mon site
+				</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+

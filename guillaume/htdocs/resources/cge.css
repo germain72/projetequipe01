@@ -1,0 +1,115 @@
+@charset "ISO-8859-1";
+
+.bannierrejeux {
+	background-color: orange;
+	color : black;
+	font-weight: bold;
+	}
+
+#titreguigui {
+	text-align: center;
+	}
+
+#fond1 {
+	background-color: lime;
+}
+
+#save {
+	text-align: center;
+	}
+	
+#textgui {
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration:overline;
+	text-overflow: clip;
+	text-shadow: blue;
+	font-style: oblique;
+	font-weight: bold;
+	color: black;
+	}
+
+.text{
+	font-size: 40px;
+}
+
+.gui{
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 15px;
+}
+
+.table>tbody>tr>td{
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+}
+
+h4{
+	text-align: center;
+}
+
+body > footer > p > a:nth-child(5){
+		text-align: center;	
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+label, input { 
+	display:block; 
+}
+
+input.text { 
+	margin-bottom:12px; 
+	width:95%; 
+	padding: .4em; 
+}
+
+fieldset { 
+	padding:0; 
+	border:0; 
+	margin-top:25px; 
+}
+
+h1 { 
+	font-size:1.2em; 
+	margin:.6em 0; 
+}
+
+div#users-contain { 
+	width: 350px; 
+	margin: 20px 0; 
+}
+
+div#users-contain table {
+	margin: 1em 0; 
+	border-collapse: collapse; 
+	width: 100%; 
+}
+
+div#users-contain table td, div#users-contain table th { 
+	border: 1px solid #eee; 
+	padding: .6em 10px; 
+	text-align: left; 
+}
+
+.ui-dialog .ui-state-error { 
+	padding: .3em; 
+}
+
+.validateTips { 
+	border: 1px solid transparent; 
+	padding: 0.3em; 
+}

@@ -83,6 +83,15 @@ navbar,
 	background-color:black;
 }
 
+.input-sm {
+	margin-top: 20px;
+	margin-left: 190px;
+	right: 0px;
+}
+
+.btn-primary {
+	margin-top: 20px;
+}
 
 
 
@@ -91,6 +100,12 @@ navbar,
 
 
 
+
+
+.img-intro {
+	position: absolute;
+	top: 300px;
+}
 
 
 
@@ -117,8 +132,32 @@ navbar,
 }
 
 
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
 
+.progress {
+  position: relative;
+  display: inline-block;
+}
+
+.progressBar {
+  width: 100%;
+  height: 22px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+
+.progressValue {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
 
 
 
@@ -142,12 +181,24 @@ navbar,
 	width: 100%;
 	height: 400px;
 	margin-top: 100px;
-	margin-bottom: 100PX;
 }
 
 .video h3 {
 	color: white;
 }
+
+.carousel-control {
+	color: red;
+	width: 300px;
+	font-weight: bold;
+}
+
+.carousel-control:hover {
+	color: red;
+	width: 600px;
+	font-weight: bold;
+}
+
 
 
 
@@ -182,7 +233,6 @@ navbar,
 }
 
 .sec_comme {
-	margin-top: 400px;
 	padding-top: 60px;
 	padding-bottom: 80px;
 	background-color: black;
@@ -411,6 +461,10 @@ footer {
 
 footer a {
 	color: red;
+}
+
+footer a:hover {
+	color: white;
 }
 
 .float-left h3{

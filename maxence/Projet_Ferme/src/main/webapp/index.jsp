@@ -26,37 +26,10 @@
 
 <link href="<c:url value="/css/style.css" />" rel="stylesheet">
 
-<title>Welcome</title>
+<title> Bienvenue sur le site de Maxou</title>
 </head>
 <body>
-	<!-- 
-	<nav>
-  <div class="nav">
-  <button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-  </button>
-    <a id="nav-toggle" href="#"><span></span></a>
-  </div>
-  <ul class="navk">
-    <li><a href="#">Accueil</a></li>
-    <li><a href="#">Regle</a></li>
-    <li><a href="#">Jeux</a></li>
-  </ul>
-</nav>
-    -->
-	<!--  
-  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li><a href="index.php">Home</a></li>
-      <li><a href="about.php">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="contact.php">Contact</a></li>
-    </ul>
-  </div>
-</nav>  
- -->
+
 			
 							<div class="container">
 						<div class="row">
@@ -83,12 +56,25 @@
 							<li><a href="#">Jeux</a></li>
 							<li><a href="#">Presentation</a></li>
 							<li><a href="mailto:maxence.doulle@orange.com" class="contact"> Nous contacter </a>  </li>
-							<div class="container">
+							
+							<form class="navbar-form navbar-right inline-form">
+            				<div class="form-group">
+              					<input type="search" class="input-sm form-control" placeholder="Recherche">
+              						<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
+            				</div>
+          				</form>
+							
 		<!---->
 						</ul>
-			</div>
-		</div>
+						
+						
+						
 	</div>
+	
+	
+	
+	
+	
 	<div class="row">
 			<div class="col-xs-8">
 				<!-- <img src="<c:url value="/images/bi.jpg" />" /> -->
@@ -99,25 +85,24 @@
 	</div>
 				
 				</nav>
-				<div class="container">
-				<div class="row">
-				<div class="col-xs-offset-4 col-md-2">
-				<!-- <button class="btn btn-default btnlogin" type="submit">login</button> -->
-				</div>
-				</div>
-				
-				<img src="<c:url value="/images/header/bi.jpg" />" />
-				<c:url value="/view/login.jsp" var="btnlogin"/>
-				<a  class="btn btn-default btnlogin" href="${btnlogin}">login</a>
-				
-				<c:url value="/view/showMessage.jsp" var="messageUrl" />
-				<a href="${messageUrl}"></a> <br /> 
-			</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-offset-4 col-md-2">
+								<!-- <button class="btn btn-default btnlogin" type="submit">login</button> -->
+							</div>
+						</div>
+							<img src="<c:url value="/images/header/bi.jpg" />" />
+								<c:url value="/view/login.jsp" var="btnlogin"/>
+									<a  class="btn btn-default btnlogin" href="${btnlogin}">login</a>
+										<c:url value="/view/showMessage.jsp"  var="messageUrl" />
+											<a href="${messageUrl}"></a> <br /> 
+					</div>
 			
 			<section class="video">
     			<h2 class="text-center"> Bienvenue sur notre jeux </h2>
     					<video  loop="loop" autoplay="autoplay" controls="controls" class="text-center" 
-    					src="<c:url value="/film/Hay_Day_360_Hug (1).mp4"/>"> </video>
+    					src="<c:url value="film/Hay_Day_360_Hug (1).mp4"/>"> </video>
+    					<!-- images/Hay_Day/images2.jpg -->
  		   </section>
     
     
@@ -131,13 +116,17 @@
     			<ol class="carousel-indicators">
         			<li data-slide-to="0" data-target="#monPremierCarrousel" class="active"></li>
         			<li data-slide-to="1" data-target="#monPremierCarrousel"></li>
-	        			<li data-slide-to="2" data-target="#monPremierCarrousel"></li>
-	    			</ol>
+	        		<li data-slide-to="2" data-target="#monPremierCarrousel"></li>
+	        		<li data-slide-to="3" data-target="#monPremierCarrousel"></li>
+	        		<li data-slide-to="4" data-target="#monPremierCarrousel"></li>
+	    		</ol>
 	    
 	    		<div class="carousel-inner">
-	        		<div class="item active"> <img src="<c:url value="/images/Hay_Day/images2.jpg" />    "> </div>
+	    			<div class="item active"> <img src="<c:url value="/images/Hay_Day/images1.jpg" />    ">  </div>
+	        		<div class="item"> <img src="<c:url value="/images/Hay_Day/images2.jpg" />    "> </div>
+	        		<div class="item">  <img src="<c:url value="/images/Hay_Day/images3.jpg" />    "> </div>
+	        		<div class="item">  <img src="<c:url value="/images/Hay_Day/images4.jpg" />    "> </div>
 	        		<div class="item"> <img src="<c:url value="/images/Hay_Day/images5.jpg" />    ">  </div>
-	        		<div class="item active">  <img src="<c:url value="/images/Hay_Day/images3.jpg" />    "> </div>
 	    		</div>
 	                                                                   <!-- Fléches de navigation --> 
 		 	<a class="left carousel-control" href="#monPremierCarrousel" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -366,12 +355,12 @@
     					<button href="http://supercell.com/en/games/clashofclans/"> Lien vers notre blog </button>
     						<hr>
     							<p class="text-center"> Suivez nous sur les réseaux sociaux, </p> <br>
-    								<img href="" class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/facebook2.png" />    ">
-    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/google-plus.png" />    ">
-    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/instagram-1581266_960_720.jpg" />    ">
-    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/Pinterest.png" />    ">
-    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/Twitter_Bird.svg.png" />    ">
-    								<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/YouTube-social-icon2.jpg" />    ">
+    								<img href="" class="reseaux" src="<c:url value="/images/Réseaux_sociaux/facebook2.png" />    ">
+    								<img class="reseaux" src="<c:url value="/images/Réseaux_sociaux/google-plus.png" />    ">
+    								<img class="reseaux" src="<c:url value="/images/Réseaux_sociaux/instagram-1581266_960_720.jpg" />    ">
+    								<img class="reseaux" src="<c:url value="/images/Réseaux_sociaux/Pinterest.png" />    ">
+    								<img class="reseaux" src="<c:url value="/images/Réseaux_sociaux/Twitter_Bird.svg.png" />    ">
+    								<img class="reseaux" src="<c:url value="/images/Réseaux_sociaux/YouTube-social-icon2.jpg" />    ">
     		</div>
     	</div>
     </section>
@@ -398,9 +387,9 @@
         
         <div class="text-center">
             <p class="white"> 
-            	<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/facebook2.png" />    "> Like nous sur Facebook 
-            	<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/Twitter_Bird.svg.png" />    "> Follow nous sur Twitter 
-            	<img class="reseaux" src="<c:url value="/resources/images/Réseaux_sociaux/linkedin.png" />    "> Follow nous sur Linkedin
+            	<img class="reseaux" src="<c:url value="/images/Réseaux_sociaux/facebook2.png" />    "> Like nous sur Facebook 
+            	<img class="reseaux" src="<c:url value="/images/Réseaux_sociaux/Twitter_Bird.svg.png" />    "> Follow nous sur Twitter 
+            	<img class="reseaux" src="<c:url value="/images/Réseaux_sociaux/linkedin.png" />    "> Follow nous sur Linkedin
             </p>
         </div>
     </footer>

@@ -9,6 +9,8 @@
 <link href="/resources/cge.css" rel="stylesheet"/>
 </head>
 <body>
+	<div class="container-fluid">
+	<table border="1" class="table table-hover text-centered">	
 	<form method="post" modelAttribute="modification" action="modifierModificationListeCourses">
 		<table border="1">
 			<thead>
@@ -25,7 +27,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${modification.listeCourses}" var="course" varStatus="status">
+				<!--<c:forEach items="${modification.listeCourses}" var="course" varStatus="status">
 					<tr>
 						<td>
 							<c:out value="${course.id}"/>
@@ -46,9 +48,14 @@
 						</td>
 					</tr>
 				</c:forEach>
+				-->
 			</tbody>
 		</table>
+		<br>
 		<input type="submit"/>
+		
 	</form>
+		</table>
+	</div>
 </body>
 </html>		

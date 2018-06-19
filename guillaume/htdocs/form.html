@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>jQuery UI Dialog - Modal form</title>
-	<link rel="stylesheet" href="./jQuery UI Dialog - Modal form_files/jquery-ui.css">
-	<link rel="stylesheet" href="./jQuery UI Dialog - Modal form_files/style.css">
-	<script src="./jQuery UI Dialog - Modal form_files/jquery-1.12.4.js.téléchargement"></script>
-	<script src="./jQuery UI Dialog - Modal form_files/jquery-ui.js.téléchargement"></script>
+	<link rel="stylesheet" href="/resources/jquery-ui.css">
+	<link href="/resources/cge.css" rel="stylesheet"/>
+	<script src="/resources/jquery-1.12.4.js.téléchargement"></script>
+	<script src="/resources/jquery-ui.js.téléchargement"></script>
 	<script>
 	$( function() {
 		var dialog, form,
-
-			// From http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state-%28type=email%29
 			emailRegex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
 			name = $( "#name" ),
 			email = $( "#email" ),
@@ -31,8 +30,8 @@
 		function checkLength( o, n, min, max ) {
 			if ( o.val().length > max || o.val().length < min ) {
 				o.addClass( "ui-state-error" );
-				updateTips( "Length of " + n + " must be between " +
-					min + " and " + max + "." );
+				updateTips( "La taille du champ " + n + " doit être comprise entre " +
+					min + " et " + max + " ." );
 				return false;
 			} else {
 				return true;
@@ -57,9 +56,9 @@
 			valid = valid && checkLength( email, "email", 6, 80 );
 			valid = valid && checkLength( password, "password", 5, 16 );
 
-			valid = valid && checkRegexp( name, /^[a-z]([0-9a-z_\s])+$/i, "Username may consist of a-z, 0-9, underscores, spaces and must begin with a letter." );
-			valid = valid && checkRegexp( email, emailRegex, "eg. ui@jquery.com" );
-			valid = valid && checkRegexp( password, /^([0-9a-zA-Z])+$/, "Password field only allow : a-z 0-9" );
+			valid = valid && checkRegexp( name, /^[a-z]([0-9a-z_\s])+$/i, "Le nom est incorrecte" );
+			valid = valid && checkRegexp( email, emailRegex, "Le mail est incorrecte" );
+			valid = valid && checkRegexp( password, /^([0-9a-zA-Z])+$/, "Le mot de passe ne doit contenir que des lettres et des chiffres." );
 
 			if ( valid ) {
 				$( "#users tbody" ).append( "<tr>" +
@@ -74,12 +73,12 @@
 
 		dialog = $( "#dialog-form" ).dialog({
 			autoOpen: false,
-			height: 400,
+			height: 550,
 			width: 350,
 			modal: true,
 			buttons: {
-				"Create an account": addUser,
-				Cancel: function() {
+				"Nouveau Joueur": addUser,
+				Annuler: function() {
 					dialog.dialog( "close" );
 				}
 			},
@@ -101,58 +100,53 @@
 	</script>
 </head>
 <body cz-shortcut-listen="true">
-
-
-
-
 <div id="users-contain" class="ui-widget">
-	<h1>Existing Users:</h1>
+	<h1>Joueurs en ligne:</h1>
 	<table id="users" class="ui-widget ui-widget-content">
 		<thead>
 			<tr class="ui-widget-header ">
-				<th>Name</th>
+				<th>Pseudonyme</th>
 				<th>Email</th>
 			</tr>
 		</thead>
 		 <tbody>
-			<!-- <tr>
-				<td>John Doe</td>
-				<td>john.doe@example.com</td>
-			</tr> -->
 		</tbody>
 	</table>
 </div>
-<button id="create-user" class="ui-button ui-corner-all ui-widget">Create new user</button>
-
-
-
-
+<button id="create-user" class="ui-button ui-corner-all ui-widget">Rejoindre la partie</button>
 <div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable" aria-describedby="dialog-form" aria-labelledby="ui-id-1" style="display: none; position: absolute;">
 	<div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle">
-		<span id="ui-id-1" class="ui-dialog-title">Create new user</span>
+		<span id="ui-id-1" class="ui-dialog-title">Nouveau Joueur</span>
 		<button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close">
 			<span class="ui-button-icon ui-icon ui-icon-closethick"></span>
 			<span class="ui-button-icon-space"></span>Close
 		</button>
 	</div>
 	<div id="dialog-form" class="ui-dialog-content ui-widget-content">
-	<p class="validateTips">All form fields are required.</p>
+	<p class="validateTips">Tous les champs sont obligatoires</p>
 	<form>
 		<fieldset>
-			<label for="name">Name</label>
+			<label for="name">Pseudonyme</label>
+			<br>
 			<input type="text" name="name" id="name" value="Jane Smith" class="text ui-widget-content ui-corner-all">
+			<br>
+			<br>
 			<label for="email">Email</label>
+			<br>
 			<input type="text" name="email" id="email" value="jane@smith.com" class="text ui-widget-content ui-corner-all">
-			<label for="password">Password</label>
+			<br>
+			<br>
+			<label for="password">Mot de passe</label>
 			<input type="password" name="password" id="password" value="xxxxxxx" class="text ui-widget-content ui-corner-all">
+			<br>
 			<input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
 		</fieldset>
 	</form>
 </div>
 	<div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
 		<div class="ui-dialog-buttonset">
-			<button type="button" class="ui-button ui-corner-all ui-widget">Create an account</button>
-			<button type="button" class="ui-button ui-corner-all ui-widget">Cancel</button>
+			<button type="button" class="ui-button ui-corner-all ui-widget">Nouveau Joueur</button>
+			<button type="button" class="ui-button ui-corner-all ui-widget">Annuler</button>
 		</div>
 	</div>
 	<div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div>

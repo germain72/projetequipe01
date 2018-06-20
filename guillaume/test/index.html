@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+<link href="/test/resources/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="/test/resources/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="/test/resources/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link href="/test/resources/cge.css" rel="stylesheet"/>
+</head>
+
+<body>
+<script>
+	$(document).ready(function() {
+		$("#affichefermiers").toggle();
+		$("#afficheferme").toggle();
+		$("#afficheguigui").toggle();
+		$("#affichecarottes").toggle();
+		$("#afficheblés").toggle();
+		$("#affichechèvres").toggle();
+		$("#affichefromages").toggle();
+		$("#listefermiers").click(function() {
+			$("#affichefermiers").toggle();
+		});
+		$("#listeguigui").click(function() {
+			$("#afficheguigui").toggle();
+		});
+		$("#listeferme").click(function() {
+			$("#afficheferme").toggle();
+		});
+		$("#choixf").click(function() {
+			$("#resultf").text($('#choixf option:selected').text());
+		});
+		$("#listecarottes").click(function() {
+			$("#affichecarottes").toggle();
+		});
+		$("#choixc").click(function() {
+			$("#resultc").text($('#choixc option:selected').text());
+		});
+		$("#listeblés").click(function() {
+			$("#afficheblés").toggle();
+		});
+		$("#choixbl").click(function() {
+			$("#resultbl").text($('#choixbl option:selected').text());
+		});
+		//chèvres
+		$("#listechèvres").click(function() {
+			$("#affichechèvres").toggle();
+		});
+		$("#choixch").click(function() {
+			$("#resultch").text($('#choixch option:selected').text());
+		});
+		//fromages
+		$("#listefromages").click(function() {
+			$("#affichefromages").toggle();
+		});
+		$("#choixfr").click(function() {
+			$("#resultfr").text($('#choixfr option:selected').text());
+		});
+		$("#choixguigui").click(function() {
+			$("#resultguigui").text($('#choixguigui option:selected').text());
+		});
+		$("#choixfe").click(function() {
+			$("#resultfe").text($('#choixfe option:selected').text());
+		});
+	});
+</script>
+<div class="panel panel-default fonddujeux">
+	<div class="panel-body" id="fond1">
+		<br>
+		<p class="titreguigui taille gras">La Ferme M-G-L</p>
+		<br>
+		<div class="container">
+			<div class="col-md-2">
+				<div id="listeferme">
+					<span class="gras">Gestion de la Ferme</span><br> 
+					<img src="/test/resources/images/fermier.png" title="ici on gère la ferme."><br>
+					<div id="afficheferme">
+						<select name="listechoixdesfermiers" class="form-control" id="choixfe">
+							<option value="1">créer un fermier</option>
+							<option value="2">cultiver un champ</option>
+						</select>
+					</div>
+					<span id="resultfe"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listefermiers">
+					<span class="gras">Nourrir la famille</span><br> 
+					<img src="/test/resources/images/champ.png" title="ici on mange."><br>
+					<div id="affichefermiers">
+						<select name="listechoixdesfermiers" class="form-control" id="choixf">
+							<option value="1">nourrir un fermier</option>
+							<option value="2">nourrir une Chèvre</option>
+						</select>
+					</div>
+					<span id="resultf"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listecarottes">
+					<span class="gras">Carottes</span><br> 
+					<img src="/test/resources/images/carotte.png" title="ici c'est le marcher."><br>
+					<div id="affichecarottes">
+						<select name="listenombrecarottes" class="form-control" id="choixc">
+							<option value="1">vendre 1 unité</option>
+							<option value="2">vendre tout</option>							
+						</select>
+					</div>
+					<span id="resultc"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listeblés">
+					<span class="gras">Blé</span><br>
+					<img src="/test/resources/images/ble.png" title="ici c'est le marcher."><br>
+					<div id="afficheblés">
+						<select name="listenombreblés" class="form-control" id="choixbl">
+							<option value="1">vendre 1 unité</option>
+							<option value="2">ventre tout</option>
+						</select>
+					</div>
+					<span id="resultbl"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listechèvres">
+					<span class="gras">Chèvres</span><br>
+					<img src="/test/resources/images/biket.png" title="ici c'est le marcher."><br>
+					<div id="affichechèvres">
+						<select name="listenombrechèvres" class="form-control" id="choixch">
+							<option value="1">vendre 1 Chèvre</option>
+							<option value="2">vendre tout</option>
+						</select>
+					</div>
+					<span id="resultch"></span>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div id="listefromages">
+					<span class="gras">Fromages</span><br> 
+					<img src="/test/resources/images/fromage.png" title="ici c'est le marcher."><br>
+					<div id="affichefromages">
+						<select name="listenombrefromages" class="form-control" id="choixfr">
+							<option value="1">vendre 1 fromage</option>
+							<option value="2">vendre tout</option>
+						</select>
+					</div>
+					<span id="resultfr"></span>
+				</div>
+			</div>	
+		</div>
+		<br>
+		<br>
+		<p class="titreguigui"><a href="/test/form.html" target="_blank" class="guillaume gras taille">Liste des joueurs</a></p>
+		<br>
+	</div>
+	<div id="fond2">
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-1">
+					<div class="container-fluid">
+						<table class="table" >
+							<tbody>
+								<tr>
+									<td valign="top">
+										<table class="table">
+											<p class="gras">Aller au Marché </p>
+											<tbody>
+												<tr class="bg-warning">
+													<td>
+														<a href="/test/listeCourses.html" target="_blank" title="Panier de courses du joueur." class="gras">Panier</a>
+													</td>
+												</tr>
+												<tr class="bg-warning">
+													<td>
+														<a href="/test/creation.html" target="_blank" title="magasin" class="gras">Acheter des carottes</a>
+													</td>
+												</tr>
+												<tr class="bg-warning">
+													<td>
+														<a href="/test/creation.html" target="_blank" title="magasin" class="gras">Acheter du blé</a>
+													</td>
+												</tr>
+												<tr class="bg-warning">
+													<td>
+														<a href="/test/suppression.html" target="_blank" class="gras" title="supprimer élément dans la liste.">Suppression d'élément du panier</a>
+													</td>
+												</tr>
+												<tr class="bg-warning">
+													<td>
+														<a href="/test/modification.html" target="_blank" class="gras" title="modifier un élément dans la liste.">Modification d'élément du panier</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<tr>
+							<p class="gras">Ressources possedées</p>
+							<p class="gui" title="Le nombre sera lié à la base de données pour évolution en directe.">Fermiers:</p><p class="gras">1</p>
+							<p class="gui" title="Le nombre sera lié à la base de données pour évolution en directe.">Champs:</p><p class="gras">1</p>
+							<p class="gui" title="Le nombre sera lié à la base de données pour évolution en directe.">Carottes:</p><p class="gras">1</p>
+							<p class="gui" title="Le nombre sera lié à la base de données pour évolution en directe.">Blé:</p><p class="gras">1</p>
+							<p class="gui" title="Le nombre sera lié à la base de données pour évolution en directe.">Chèvres:</p><p class="gras">1</p>
+							<p class="gui" title="Le nombre sera lié à la base de données pour évolution en directe.">Fromages:</p><p class="gras">1</p>
+						</tr>
+					</div>
+				</div>
+				<div class="col-md-11 col-md-offset-md-1">
+					<video autoplay="autoplay" loop="loop" preload="auto" controls="controls" src="/test/resources/video/gui.mp4" width="100%" title="Cette vidéo remplace provisoirement l'écran de jeu."></video>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<div class="container">
+					<div class="col-md-offset-2 col-md-4">Enregistrer partie
+						<a href="/test/sauvegarde.html">
+							<img src="/test/resources/images/save.png">
+						</a>
+					</div>
+					<div class="col-md-4">Quitter 
+						<a href="/test/quitter.html"> 
+							<img src="/test/resources/images/exit.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<footer class="container taille gras">
+		<h4>&copy;&nbsp;La Ferme M.G.L 
+			<br>
+			<br>
+		</h4>
+   		<p class="white text-center"> 
+			<a href="https://www.facebook.com/guillaume.ducrotoy.58" target="_blank" class="black">
+				<img class="reseaux" src="/test/resources/images/facebook2.png">&nbsp;Like nous sur Facebook
+			</a>
+			&nbsp;
+			<a href="https://twitter.com/?lang=fr" target="_blank" class="black">
+				<img class="reseaux" src="/test/resources/images/Twitter_Bird.svg.png">&nbsp;Follow nous sur Twitter
+			</a>
+			<br>
+		
+			<a href="https://fr.linkedin.com/in/guillaume-ducrotoy-682109162" target="_blank" class="black">
+				<img class="reseaux" src="/test/resources/images/linkedin.png">&nbsp;Follow nous sur Linkedin
+			</a>
+			&nbsp;
+			<a href="https://plus.google.com/116678410420487171021" target="_blank" class="black">
+				<img class="reseaux" src="/test/resources/images/google-plus.png">&nbsp;suivre sur Google
+			</a>
+		</p>
+		<h4>&copy;&nbsp;
+			<a href="http://www.gducrotoy.com" title="Guigui est ici!" class="black">Mon site</a>	
+		</h4>
+    </footer>
+</body>
+</html>
+
